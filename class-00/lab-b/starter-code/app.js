@@ -7,7 +7,7 @@ const theOldWay = function(course) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('The old way:', theOldWay('Code 301'));
+console.log('The old way:', theOldWay('Code 301'));
 
 
 // STEP 2
@@ -18,7 +18,7 @@ const theNewWay = (course) => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('The new way:', theNewWay('Code 301'));
+console.log('The new way:', theNewWay('Code 301'));
 
 
 // STEP 3
@@ -28,7 +28,7 @@ const withoutParens = course => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Without parens:', withoutParens('Code 301'));
+console.log('Without parens:', withoutParens('Code 301'));
 
 
 // STEP 4
@@ -70,7 +70,7 @@ const multiLiner = word => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Multi-line arrow function:', multiLiner('hello'));
+console.log('Multi-line arrow function:', multiLiner('hello'));
 
 
 // STEP 8
@@ -85,7 +85,7 @@ const oldObject = function(array) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Hello from the old object function', oldObject(['hi', 'hello', 'are you there?']));
+console.log('Hello from the old object function', oldObject(['hi', 'hello', 'are you there?']));
 
 
 // STEP 9
@@ -98,7 +98,7 @@ const newObject = array => ({
 });
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Hello from the new object function', newObject(['hi', 'hello', 'are you there?']));
+console.log('Hello from the new object function', newObject(['hi', 'hello', 'are you there?']));
 
 
 // STEP 10
@@ -106,11 +106,10 @@ const newObject = array => ({
 // Refactor each function into an arrow function.
 // Write your solutions on a single line wherever possible.
 
-
-
 let sum = function(a, b, c, d) {
   return a + b + c + d;
 };
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // console.log(sum(1, 2, 3, 4));
