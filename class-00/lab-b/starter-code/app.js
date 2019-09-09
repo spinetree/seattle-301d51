@@ -49,7 +49,7 @@ const add = function(num1, num2) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Let\'s do some math:', add(4, 5));
+console.log('Let\'s do some math:', add(4, 5));
 
 
 // STEP 6
@@ -58,7 +58,7 @@ const add = function(num1, num2) {
 const addOneLiner = (num1, num2) => `${num1} + ${num2} = ${num1 + num2}`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Add as a one-liner:', addOneLiner(4, 5));
+console.log('Add as a one-liner:', addOneLiner(4, 5));
 
 
 // STEP 7
@@ -106,43 +106,58 @@ console.log('Hello from the new object function', newObject(['hi', 'hello', 'are
 // Refactor each function into an arrow function.
 // Write your solutions on a single line wherever possible.
 
-let sum = function(a, b, c, d) {
-  return a + b + c + d;
-};
+// let sum = function(a, b, c, d) {
+//   return a + b + c + d;
+// };
 
-
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sum(1, 2, 3, 4));
-
-
-let objectLit = function() {
-  return {
-    key1: 'value1',
-    key2: 'value2',
-    key3: 'value3',
-  };
-};
+const sum = (a, b, c, d) => `${a} + ${b} + ${c} + ${d}`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(objectLit());
+console.log(sum(1, 2, 3, 4));
 
 
-let sumAndProduct = function(a, b) {
+// let objectLit = function() {
+//   return {
+//     key1: 'value1',
+//     key2: 'value2',
+//     key3: 'value3',
+//   };
+// };
+
+const objectLit = array => ({ 
+  key1: 'value1',
+  key2: 'value2',
+  key3: 'value3',
+});
+
+// TODO: Uncomment the following line of code to see the output in the browser console
+console.log(objectLit());
+
+
+// let sumAndProduct = function(a, b) {
+//   let sum = a + b;
+//   let product = a * b;
+//   return [sum, product];
+// };
+
+const sumAndProduct = (a, b) => {
   let sum = a + b;
   let product = a * b;
   return [sum, product];
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sumAndProduct(3, 9));
+console.log(sumAndProduct(3, 9));
 
 
-let message = function(name) {
-  return `Hello, ${name}!`;
-};
+// let message = function(name) {
+//   return `Hello, ${name}!`;
+// };
+
+const message = name => `Hello, ${name}!`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(message('Allie'));
+console.log(message('Allie'));
 
 
 let Student = function(name, age, hometown) {
